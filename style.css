@@ -1,14 +1,61 @@
 body {
-  background-color: white;
+  background-color: none;
   font-family: arial, sans-serif;
   font-size: 13px;
-  color: rgb(126, 125, 125);
+  /* color: rgb(126, 125, 125); */
 }
 
+/* Navigation Bar */
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+li.not-btn a {
+  display: block;
+  color: rgb(85, 84, 84);
+  text-align: center;
+  padding: 14px 12px;
+  text-decoration: none;
+}
+
+li.not-btn a:hover {
+  text-decoration: underline;
+}
+
+li.left {
+  float: left;
+}
+
+li.right {
+  float: right;
+}
+
+div.sign-in {
+  display: block;
+  background: rgb(3, 111, 212);
+  font-weight: bold;
+  border-radius: 4px;
+  text-align: center;
+  padding: 6px 12px;
+  margin-top: 8px;
+  margin-right: 20px;
+  margin-left: 10px;
+  text-decoration: none;
+  color: white;
+}
+
+/* Main Elements */
 .main {
-  margin: 100px auto 0 auto;
+  margin: 150px auto 0 auto;
   width: 500px;
   text-align: center;
+}
+
+img {
+  padding: auto;
 }
 
 .wrapper {
@@ -46,7 +93,7 @@ body {
     border-radius: 20px;
     height: 35px;
     width: 100%;
-    padding: 2px 23px 2px 30px;
+    padding: 2px 30px 2px 30px;
     outline: 0;
     background-color: #ffffff;
   }
@@ -64,11 +111,22 @@ body {
   margin-left: 5px;
   margin-right: 5px;
   margin-top: 25px;
-  border: .5px;
+  border-style: hidden;
   border-radius: 10px;
 }
 
 .search-button:hover, .search-button:focus {
-  border: .5px solid #a5a5a5;
+  box-shadow: .25px .25px rgba(121, 121, 121), -.25px -.25px rgba(121, 121, 121);
+}
+
+/* Footer */
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: rgba(185, 185, 185, 0.19);
+  font-size: 1.1em;
+
 }
 
