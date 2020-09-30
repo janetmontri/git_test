@@ -1,1 +1,1 @@
-This is Janet's first git project!
+Attempting to recreate Google homepage
